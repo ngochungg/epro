@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav"> <!--menu-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a><br>
+        <a href="#">Spring</a>
+        <a href="#">Summer</a>
+        <a href="#">Fall/Autumn</a>
+        <a href="#">Winter</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <a href="">
+        <img src="image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;"> <!--logo-->
+    </a>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+
+    <div class="slideshow-container"> <!--slide-->
+
+    <div class="mySlides fade">
+    <img src="Season/Fall/Singapore's_National_Day_2009_Fireworks_preview.jpg" style="width: 100%; height: 500px;">
+    <div class="text">
+        <a href="">&#128248; Singapore National Day</a>
+    </div>
+    </div>
+
+    <div class="mySlides fade">
+    <img src="Season/Summer/vesak_cam.jpg" style="width:100%; height: 500px;">
+    <div class="text">
+        <a href="">&#128248; Vesak Bochea Dday in Cambidia</a>
+    </div>
+    </div>
+
+    <div class="mySlides fade">
+    <img src="Season/Summer/Ramadan,_Geylang_Serai,_Singapore_(3886755657).jpg" style="width:100%; height: 500px;">
+    <div class="text">
+        <a href="">&#128248; Somewhere in Singapore</a>
+    </div>
+    </div>
+
+    </div>
+
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="&#128270;Try 'Singapore'" name="search">
+      </form>
+
+    <div style="text-align:center"> <!--slide dot-->
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-9">
+
+        </div>
+      
+        <div class="col-md-3">
+            
+        </div>
+    </div>
+    
+
+    <script> // menu
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <script> //slide
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+    </script>
+</body>
+</html>
