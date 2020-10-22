@@ -52,36 +52,14 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Caption text */
-.text a{
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 45px 14px ;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
-}
-
-.text a:hover{
-    text-decoration: underline;
-}
-
 /* Style the search field */
 form.example input[type=text] {
     padding: 7px;
     font-size: 17px;
     width: 25%;
     position: absolute;
-    left: 38%;
-    top: 93%;
+    right: 20%;
+    top: 4.5%;
   }
   
   /* Clear floats */
@@ -91,54 +69,28 @@ form.example input[type=text] {
     display: table;
   }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 8px;
-  width: 8px;
-  margin: 0 4px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 1s ease;
-  position: relative;
-  top: -50px;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} /*slide*/
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}/*slide*/
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
 
 .pichead img{
-  max-width: 1050px;
+  max-width: 1100px;
   position: relative;
   left: 180px;
 }
 
 .row h2{
     position: relative;
-    left: 180px;
-    font-weight: 100;
+    left: 165px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+div .row p{
+    position: relative;
+    left: 165px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
 }
