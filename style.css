@@ -63,7 +63,7 @@ img {vertical-align: middle;}
   color: white;
   text-decoration: none;
   font-size: 18px;
-  margin: 45px 14px ;
+  margin: 17px 14px ;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -81,7 +81,7 @@ form.example input[type=text] {
     width: 25%;
     position: absolute;
     left: 38%;
-    top: 93%;
+    top: 740px;
   }
   
   /* Clear floats */
@@ -95,7 +95,7 @@ form.example input[type=text] {
 .dot {
   height: 8px;
   width: 8px;
-  margin: 0 4px;
+  margin: 0 6px;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
