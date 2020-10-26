@@ -101,3 +101,6 @@ div .row p{
     font-weight: 400;
     text-align: justify;
 }
+span{
+  font-weight: bold;
+}
