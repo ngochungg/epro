@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring</title>
+    <link rel="stylesheet" href="/stylepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+</head>
+<body>
+    <table class="bar">
+        <div id="mySidenav" class="sidenav"> <!--menu-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a><br>
+            <a href="spring_page.html">Spring</a>
+            <a href="#">Summer</a>
+            <a href="#">Fall/Autumn</a>
+            <a href="#">Winter</a>
+            <a href="#">Contact Us</a>
+        </div>
+    
+        <a href="/index.html"> <!--logo-->
+            <img src="/./image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        </a>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+    
+        <script> // menu
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+      
+    </table>
+
+    <div class="pichead">
+      <img src="/Season/Spring/headspring.jpg" alt="spring" style="width: 100%; height: 600px;">
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-6">
+              <div>
+                <a href="/singapore/chineseyear.html"><br><p>Singapore Chinese New Year</p></a><br><br><br>
+                <a href="/singapore/chineseyear.html"><img src="/Season/Spring/sing/sing_chinese3.jpg" alt="newyear" style="width: auto; height: 200px; position: absolute; left: 180px; float: left;"></a>
+              </div>
+              <p>
+                The celebration of this grand festival in Singapore continues for 14 days starting on the eve 
+                of the New Years.During this time, the Chinese locals visit their families and decorate their 
+                homes with red and gold colours.
+              </p>
+          </div>
+
+          <div class="col-sm-6">
+              
+          </div>
+      </div>
+  </div>
+
+
+
+    <form class="example" action="action_page.php"> <!--Search bar-->
+        <input type="text" placeholder="&#128270;Search" name="search">
+    </form>
+
+
+</body>
+</html>
