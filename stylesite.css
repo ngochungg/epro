@@ -85,6 +85,13 @@ form.example input[type=text] {
     left: 165px;
     font-weight: 500;
     font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.row p{
+    text-decoration: none;
+    color: black;
 }
 
 div .row p{
