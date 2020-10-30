@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Festival</title>
+    <link rel="stylesheet" href="/stylepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+</head>
+<body>
+    <table class="bar">
+        <div id="mySidenav" class="sidenav"> <!--menu-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/index.html">Home</a><br>
+            <a href="spring_page.html">Spring</a>
+            <a href="summer_page.html">Summer</a>
+            <a href="fall_page.html">Fall/Autumn</a>
+            <a href="winter_page.html">Winter</a>
+            <a href="#">Contact Us</a>
+        </div>
+    
+        <a href="/index.html"> <!--logo-->
+            <img src="/./image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        </a>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+    
+        <script> // menu
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+      
+    </table>
+
+    <div class="pichead">
+      <img src="/Season/Winter/winterhead.jpeg" alt="spring" style="width: 100%; height: 600px;"><br><br>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1">
+
+        </div>
+
+        <div class="col-sm-3">
+          <a href="/singapore/singaporenight.html">
+            <h4>Singapore Night Festival</h4>
+            <img src="/Season/Winter/sing/singnight.png "alt="pic" style="width: 230px; height: 150px; margin: auto; position: relative; left: 45px;"> 
+          </a>
+        </div>
+
+        <div class="col-sm-2">
+          <a href="/singapore/singaporenight.html">
+            <div class="dec">
+              <br><br>As Singapore’s annual pinnacle arts festival, the Singapore International Festival of Arts (SIFA) presents captivating 
+              and diverse works across theatre, music, dance, film and visual arts...
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-3"> 
+          <a href="/singapore/deepavali.html">
+            <h4 style="left: 25px;">Deavali Festival</h4>
+          <img src="/Season/Winter/sing/deepavali.jpg" alt="pic" style="width: 250px; height: 150px; margin: auto; position: relative; left: 25px;">
+          </a>
+        </div>
+
+        <div class="col-sm-2">
+          <a href="/singapore/deepavali.html">
+            <div class="dec">
+              <br><br>Just when you think the street lights can’t get any more dazzling, out come massive peacocks, lotus flowers, oil lamps and Mahalakshmi, 
+              the goddess of wealth and prosperity in Hinduism,...
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-1">
+          
+        </div>
+        
+      </div>
+  </div>
+
+
+
+    <form class="example" action="action_page.php"> <!--Search bar-->
+        <input type="text" placeholder="&#128270;Search" name="search">
+    </form>
+
+
+</body>
+</html>
