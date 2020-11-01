@@ -103,6 +103,12 @@ div .row p{
     text-align: justify;
 }
 
+<<<<<<< HEAD:stylesite.css
+span
+{
+    font-size: 25px;
+=======
 span{
   font-weight: bold;
+>>>>>>> 1f75ff5d5f863305c2e0d0a91320b83744af279e:css/stylesite.css
 }
