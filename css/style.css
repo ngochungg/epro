@@ -130,15 +130,3 @@ form.example input[type=text] {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
-.pichead img{
-  max-width: 1050px;
-  position: relative;
-  left: 180px;
-}
-
-.row h2{
-    position: relative;
-    left: 180px;
-    font-weight: 100;
-}
