@@ -6,9 +6,11 @@
     <title>National Day</title>
     <link rel="stylesheet" href="/css/stylesite.css">
 </head>
+
 <body>
-    <table class="bar">
-        <div id="mySidenav" class="sidenav"> <!--menu-->
+    <!--
+            <table>
+        <div id="mySidenav" class="sidenav"> menu
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/index.html">Home</a><br>
             <a href="/Page/spring_page.html">Spring</a>
@@ -18,11 +20,11 @@
             <a href="#">Contact Us</a>
         </div>
     
-        <a href="/index.html"> <!--logo-->
+        <a href="/index.html"> logo
             <img src="/./image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
         </a>
     
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> menu button
     
         <script> // menu
             function openNav() {
@@ -34,9 +36,7 @@
             }
           </script>
       
-    </table>
-
-    <form class="example" action="action_page.php"> <!--Search bar-->
+    <form class="example" action="action_page.php"> Search bar
         <input type="text" placeholder="&#128270;Search" name="search">
     </form>
 
@@ -93,6 +93,48 @@
             </div>
         </div>
     </div>
+    </table>
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Festival</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Load icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav"> <!--menu-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a><br>
+            <a href="Page/spring_page.html">Spring</a>
+            <a href="Page/summer_page.html">Summer</a>
+            <a href="Page/fall_page.html">Fall/Autumn</a>
+            <a href="Page/winter_page.html">Winter</a>
+            <a href="#">Contact Us</a>
+        </div>
+    
+        <a href="index.html"> <!--logo-->
+            <img src="image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        </a>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+    
+        
+        <script> // menu
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+    </body>
+    </html>
+    
 
 </body>
 </html>
