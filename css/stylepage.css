@@ -107,3 +107,8 @@ div .dec{
   color: black;
   text-align: justify;
 }
+
+h2{
+  position: relative;
+  left: 180px;
+}
