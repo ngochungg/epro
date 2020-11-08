@@ -39,8 +39,8 @@ body{
 
 #menu{
   position: absolute;
-  right: 30px;
   top: 30px;
+  right: 30px;
 }
 
 @media screen and (max-height: 450px) {
@@ -70,15 +70,58 @@ form.example::after {
   display: table;
 }
 
+#button {
+  display: inline-block;
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+section {
+  min-height: 100%;
+}
+
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
 .text {font-size: 11px}
 }
 
 .pichead img{
-max-width: 1080px;
-position: relative;
-left: 180px;
+  max-width: 1500px;
+  display: inline-block;
+  position: relative;
 }
 
 .row a p{
@@ -103,7 +146,7 @@ div .col-sm-3 h4{
 
 div .dec{
   position: relative; 
-  left: -20px; 
+  left: -15px; 
   color: black;
   text-align: justify;
 }
@@ -111,4 +154,10 @@ div .dec{
 h2{
   position: relative;
   left: 180px;
+}
+
+a .icon{
+  position: relative;
+  left: 480px;
+  max-width: 30px;
 }

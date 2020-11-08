@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 </head>
 <body>
 
@@ -49,7 +51,7 @@
     </form>
 
     <div class="pichead">
-        <img src="Season/Summer/Phil/lechon1.jpg" alt="" style="width: 100%; height: 500px;">
+        <img src="Season/Summer/lechons.jpg" alt="pic" style="width: 100%; height: 500px;">
     </div>
 
     <br>
@@ -67,15 +69,15 @@
                 <p><b>What to do at the Lechon Festival</b></p>
                 <P>Here are some of the most exciting things to do at Lechon Festival:</P>
                 <P><b>1. Watch the Parada ng Lechon<br></b></P>
-                <img src="Season/Summer/Phil/lechon2.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <img src="Season/Summer/Phil/lechons1.jpg" alt="pic" style="width: 100%; height: 400px; position: relative; left: 165px;">
                 <p><br>One of the most-awaited events and the main highlight of the festival is the lechon parade. Many roasted pigs are dressed like humans, sometimes famous characters, while others are just covered with plastic. Locals do this to ensure that the lechon won’t be soggy 
                     after the parade.</p>
                 <p><b>2. Enjoy the basaan<br></b></p>
-                <img src="Season/Summer/Phil/lechon3.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <img src="Season/Summer/Phil/lechons2.jpg" alt="pic" style="width: 100%; height: 400px; position: relative; left: 165px;">
                 <p><br>This is undoubtedly the most fun part of the event because everyone is allowed to douse water to each other, may it be locals, tourists, or just passers-by. It can really test someone’s patience but this event is nothing but fun. A piece of advice though, trust no one! Because you’ll never know who will throw water (
                     sometimes ice-cold) at you!</p>
                 <p><b>3. Support local businesses<br></b></p>
-                <img src="Season/Summer/Phil/lechon4.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <img src="Season/Summer/Phil/lechons3.jpg" alt="pic" style="width: 100%; height: 400px; position: relative; left: 165px;">
 
                 <p><br>During the festival, not only the lechons are featured but there are also other famous local delicacies you can try in Balayan like the Bagoong Balayan, a Pinoy condiment produced by fermenting ground scads (galunggong) or anchovies (dilis). 
                     You can also try the famous Batangas Lomi.</p>
@@ -88,6 +90,27 @@
             </div>
         </div>
     </div>
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
+  <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+  </script>
 
 </body>
 </html>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 </head>
 <body>
     <div id="mySidenav" class="sidenav"> <!--menu-->
@@ -76,7 +78,27 @@
             
         </div>
     </div>
-    
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
+    <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+    </script>
 
     <script> // menu
       function openNav() {
@@ -109,5 +131,7 @@
       setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
     </script>
+
+
 </body>
 </html>

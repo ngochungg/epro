@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 </head>
 <body>
 
@@ -17,16 +19,16 @@
     <table class="bar">
         <div id="mySidenav" class="sidenav"> <!--menu-->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="/index.html">Home</a><br>
-            <a href="/Page/spring_page.html">Spring</a>
-            <a href="/Page/summer_page.html">Summer</a>
-            <a href="/Page/fall_page.html">Fall/Autumn</a>
-            <a href="/Page/winter_page.html">Winter</a>
+            <a href="index.html">Home</a><br>
+            <a href="page_spring.html">Spring</a>
+            <a href="page_summer.html">Summer</a>
+            <a href="page_fall.html">Fall/Autumn</a>
+            <a href="page_winter.html">Winter</a>
             <a href="#">Contact Us</a>
         </div>
     
-        <a href="/index.html"> <!--logo-->
-            <img src="/./image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        <a href="index.html"> <!--logo-->
+            <img src="image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
         </a>
     
         <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
@@ -48,7 +50,7 @@
     </form>
 
     <div class="pichead">
-        <img src="/./Season/Spring/japan/japan_mathead.jpg" alt="" style="width: 100%; height: 500px;">
+        <img src="Season/Spring/japan/japan_mathead.jpg" alt="" style="width: 100%; height: 500px;">
     </div>
 
     <br>
@@ -57,12 +59,12 @@
         <div class="row">
             <div class="col-sm-6">
                 <h2>Yuki Matsuri</h2><br>
-                <img src="/./Season/Spring/japan/japan_mat3.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <img src="Season/Spring/japan/japan_mat3.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
                 <p><br>Yuki Matsuri, also known as “Sapporo snow festival”, is held for about a week in Hokkaido. This festivity is one of Japan’s most popular winter events, starting out in 1950 when a group of high-school students built snow statues in the local park. It has since developed into a huge, cultural event featuring snow and ice sculptures which people compete in by making their own, it attracts more than two million visitors from Japan and across the world every year.
                 </p>
                 <p>The subject of the statues varies and often features an event, famous building or person from the previous year. For example, in 2004, there were statues of Hideki Matsui, the famous baseball player who at that time played for the New York Yankees. A number of stages made out of snow are also constructed and some events including musical performances are held. At the Satoland site, visitors can enjoy the long snow and ice slides as well as a huge maze made of snow. Visitors can also enjoy a variety of regional foods from all over Hokkaidō at the Odori Park and Satoland sites, such as fresh seafood, potatoes, corn, and fresh dairy products.
                 </p>
-                <br><img src="/./Season/Spring/japan/japan_Mat1.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <br><img src="Season/Spring/japan/japan_Mat1.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
                 <p>
                     <br>The main site is the Odori Site in Sapporo's centrally located 1.5 kilometer long Odori Park. The festival's famous large snow sculptures, some measuring more than 25 meters wide and 15 meters high, are exhibited there. They are lit up daily until 22:00.
 
@@ -71,13 +73,13 @@
 
 
                 </p>
-                <br><img src="/./Season/Spring/japan/japan_matsuriFes.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <br><img src="Season/Spring/japan/japan_matsuriFes.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
                 <p>
                     <br>The less centrally located Tsu Dome Site is a family oriented site with three types of snow slides, snow rafting and more snow sculptures. Inside the dome, there are many food stands and a stage for events. The Tsu Dome Site is open daily from 9:00 to 17:00. The Tsu Dome Site opens a few days before the full start of the festival, on January 31, 2020.
 
 
                 </p>
-                <br><img src="/./Season/Spring/japan/japan_Mat2.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <br><img src="Season/Spring/japan/japan_Mat2.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
                 <p>
                     <span></span><br>
                     <span></span><br>
@@ -88,6 +90,27 @@
             </div>
         </div>
     </div>
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
+  <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+  </script>
 
 </body>
 </html>

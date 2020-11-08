@@ -61,11 +61,12 @@ img {vertical-align: middle;}
 /* Caption text */
 .text a{
   color: white;
-  text-decoration: none;
   font-size: 18px;
   margin: 38px 14px ;
-  position: absolute;
-  bottom: 8px;
+  position: relative;
+  text-decoration: none;
+  bottom: 30px;
+  right: 20px;
   width: 100%;
   text-align: left;
 }
@@ -91,19 +92,6 @@ form.example input[type=text] {
     display: table;
   }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 8px;
-  width: 8px;
-  margin: 0 6px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 1s ease;
-  position: relative;
-  top: -50px;
-}
-
 .active {
   background-color: #717171;
 }
@@ -114,6 +102,44 @@ form.example input[type=text] {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+#button {
+  display: inline-block;
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @-webkit-keyframes fade {
