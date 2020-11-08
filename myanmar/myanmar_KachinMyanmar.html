@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kachin Manaw Festival</title>
+    <link rel="icon" href="image/logoasean2.jpg">
+    <link rel="stylesheet" href="../css/stylesite.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+</head>
+<body>
+
+
+</head>
+<body>
+    <table class="bar">
+        <div id="mySidenav" class="sidenav"> <!--menu-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html">Home</a><br>
+          <a href="../page_spring.html">Spring</a>
+          <a href="../page_summer.html">Summer</a>
+          <a href="../page_fall.html">Fall/Autumn</a>
+          <a href="../page_winter.html">Winter</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <a href="../index.html"> <!--logo-->
+            <img src="../image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        </a>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+    
+        <script> // menu
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+      
+    </table>
+
+    <form class="example" action="action_page.php"> <!--Search bar-->
+        <input type="text" placeholder="&#128270;Search" name="search">
+    </form>
+
+    <div class="pichead">
+        <img src="../Season/Summer/Phil/Pahiyas1.jpg" alt="" style="width: 100%; height: 500px;">
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2><b>Pahiyas: The Philippines' Most Colourful Harvest Festival</b></h2>
+                <p>With the Filipinos’ fun-loving spirit and creativity, there’s a handful of grand town fiestas and vibrant festivals celebrated across the Philippines. Among the numerous festivals in the country, the province of Quezon takes pride in its annual colorful harvest festival called 
+                    <br><b>The Pahiyas Festival</b></p>
+                <img src="../Season/Summer/Phil/Pahiyas2.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p><br><b>Every May 15</b>, the townsfolk of Lucban, Quezon, don their houses with fruits, vegetables and colorful kiping (a leaf-shaped wafer made of rice and dyed with food coloring) in celebration of the Pahiyas Festival. The word ‘pahiyas’ was derived from the word ‘payas’, which means decoration or to decorate. The reason behind such practice dates back to the 15th century, when farmers used to offer their harvests at the foot of Mount Banahaw. Over time, they brought their farm produce at the church in honor of the town’s patron saint – St. Isidore the Laborer, who is the 
+                    patron saint of farmers, laborers and peasants.</p>
+                <p>During that time, farmers would bring their harvest to the town church and the parish priest would bless them as a way to give thanks to the Lord for their bountiful harvest. But as time progressed, the church can no longer accommodate all harvests. It was then agreed upon for the harvests to be displayed in the farmers’ houses instead. Thus, the parish priest 
+                    would go around the community to bless their harvests.</p>
+                <p><b>The Pahiyas Festival Nowadays</b></p>
+                <img src="../Season/Summer/Phil/Pahiyas3.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p><br>Locals believe that keeping the tradition alive was essential because it brought them away from deprivation and misfortune in their town. In May 1963, what was originally a pagan festival transformed into the colorful, grand festival that Filipinos know today. Apart from holding a competition that chooses the house with the most creative design, the festival also included cultural shows, various contests, parades and exhibits that would boost the tourist of the town of Lucban. It was the idea of the Art Club of Lucban’s 
+                    Founder and President Fernando Cadeliña Nañawa.</p>
+                <p>Instead of just putting the agricultural harvest in front of their door steps, the facade of each participating house also put commercial products such as hats, abaniko or hand-held fans, mats, bags, the famous Lucban 
+                    longganisa (Filipino-style sausages) and of course, the kiping.</p>
+                    <img src="../Season/Summer/Phil/Pahiyas4.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p><br>The highlight of the Pahiyas Festival comes after the town’s procession where the spirited tradition of ‘Kalas’ takes place. The term literally means to romp away the harvests and decorations from the houses as a symbol of joy and merriment. Indeed, the Pahiyas Festival has become one of the most-sought after festivals across the Philippines, luring in locals from nearby towns and even tourists from other countries.</p>
+                <p style="font-style: italic;font-size: 15px;">Source: theculturetrip.com</p> 
+            </div>
+            
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
+  <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+  </script>
+
+
+</body>
+</html>

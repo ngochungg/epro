@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aomori Nebuta Matsuri</title>
+    <link rel="stylesheet" href="../css/stylesite.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+</head>
+<body>
+
+
+</head>
+<body>
+    <table class="bar">
+        <div id="mySidenav" class="sidenav"> <!--menu-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html">Home</a><br>
+          <a href="../page_spring.html">Spring</a>
+          <a href="../page_summer.html">Summer</a>
+          <a href="../page_fall.html">Fall/Autumn</a>
+          <a href="../page_winter.html">Winter</a>
+          <a href="#">Contact Us</a>
+        </div>
+    
+        <a href="../index.html"> <!--logo-->
+            <img src="../image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        </a>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+    
+        <script> // menu
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+      
+    </table>
+
+    <form class="example" action="action_page.php"> <!--Search bar-->
+        <input type="text" placeholder="&#128270;Search" name="search">
+    </form>
+
+    <div class="pichead">
+        <img src="../Season/Fall/japan/japan_aoi1.jpg" alt="" style="width: 100%; height: 500px;">
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Aomori Nebuta Matsuri</h2><br>
+                <img src="../Season/Fall/japan/japan_aomori.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p><br>Nebuta and Neputa are a type of Tanabata related summer festival held in towns around Aomori Prefecture. The largest of these festivals is the Nebuta Matsuri (ねぶた祭) of Aomori City, held every year from August 2 to 7. The highlight of the festival is the daily parade of enormous lantern floats, flanked by large taiko drums, musicians and dancers. The Nebuta Matsuri together with Akita's Kanto Matsuri and Sendai's Tanabata make up the Tohoku Sandai Matsuri (Three Great Festivals of the Tohoku Region).
+
+
+                </p>
+                <p>
+                </p>
+                <br><img src="../Season/Fall/japan/japan_ao2.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p>
+                    <br>Local teams build the festival's two dozen floats, which are constructed of painted washi paper over a wire frame and take an entire year to design and construct. They can be up to nine meters wide and five meters tall and often depict gods, historical or mythical figures from both Japanese and Chinese culture, kabuki actors, and characters from the popular NHK Taiga Drama historical TV series.
+
+
+                </p>
+                <br><img src="../Season/Fall/japan/japan_ao3.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p>
+                    <br>Every night of the festival the floats are wheeled out onto the streets of downtown Aomori for a parade, except on the last day (August 7), when the parade is held in the afternoon. The floats are pushed along the street by human power, weaving back and forth, and spinning around for the crowd. Each float is accompanied by teams of taiko drummers, flute and hand cymbals players, as well as hundreds of dancers, called haneto in the local dialect, who follow the procession chanting "Rassera, Rassera" while performing a dance that looks a little bit like skipping.
+
+
+                </p>
+                <br><img src="../Season/Fall/japan/japan_ao4.jpg" alt="" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p>
+                    On the first two nights of the festival the parades are somewhat smaller with only about two thirds of the lantern floats participating. However on the nights from August 4 to 6 the parades are in full swing and every float makes an appearance. All the floats are also displayed in the afternoon parade on the last day of the festival, before some of the floats are put onto boats and paraded around the bay in the evening. Finally, a two hour fireworks display along the waterfront closes off the festivities.
+
+
+                </p>
+                <p>
+                    Various events are held during the festival at Rassera Land next to the ASPM building along the city's waterfront. The festival floats are stabled at Rassera Land during the day, and visitors are encouraged to check them out up close, take pictures and meet with some of the designers and builders. There are also singing and dance performances held at ASPM as well as vendors selling food and festival related goods.
+
+
+                </p>
+                <p>
+                    <span></span><br>
+                    <span></span><br>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
+  <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+  </script>
+
+
+</body>
+</html>
