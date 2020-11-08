@@ -156,3 +156,7 @@ form.example input[type=text] {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+.text a:hover{
+  text-decoration: none;
+}

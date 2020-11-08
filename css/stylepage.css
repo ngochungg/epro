@@ -139,11 +139,15 @@ div .col-sm-3 h4{
   font-size: 18px;
 }
 
-div .dec{
+.row .dec{
   position: relative; 
   left: -15px; 
   color: black;
   text-align: justify;
+}
+
+.row a:hover{
+  text-decoration: none;
 }
 
 h2{
@@ -153,6 +157,6 @@ h2{
 
 .icon{
   position: relative;
-  left: 570px;
+  left: 500px;
   max-width: 30px;
 }
