@@ -112,12 +112,6 @@ section {
   min-height: 100%;
 }
 
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-.text {font-size: 11px}
-}
-
 .pichead img{
   max-width: 1500px;
   display: inline-block;
@@ -142,6 +136,7 @@ div .col-sm-3 h4{
   color: black; 
   position: relative; 
   left: 45px;
+  font-size: 18px;
 }
 
 div .dec{
@@ -156,8 +151,8 @@ h2{
   left: 180px;
 }
 
-a .icon{
+.icon{
   position: relative;
-  left: 480px;
+  left: 570px;
   max-width: 30px;
 }
