@@ -141,7 +141,35 @@ div .row p{
     text-align: justify;
 }
 
-
 span{
   font-weight: bold;
+}
+
+div .sug{
+  width: 180px;
+  position: relative;
+  left: 200px;
+}
+
+div strong{
+  position: relative;
+  top: 70px;
+  left: 183px;
+  font-size: 20px;
+}
+
+#title{
+  position: relative;
+  top: 80px;
+  left: 200px;
+}
+
+#dec{
+  font-size: 12px;
+  text-align: justify;
+  left: 200px;
+}
+
+.col-sm-2 a:hover{
+  text-decoration: none;
 }
