@@ -94,3 +94,13 @@
 .footer_third i{
     font-size: smaller;
 }
+
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: rgb(187, 179, 179);
+    margin-bottom: 40px;
+
+}
