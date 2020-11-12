@@ -173,3 +173,9 @@ div strong{
 .col-sm-2 a:hover{
   text-decoration: none;
 }
+
+strong.book{
+  position: absolute;
+  top: -50px;
+
+}
