@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tet Festival</title>
+    <link rel="stylesheet" href="../css/stylesite.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+</head>
+<body>
+
+
+</head>
+<body>
+    <table class="bar">
+        <div id="mySidenav" class="sidenav"> <!--menu-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html">Home</a><br>
+          <a href="../page_spring.html">Spring</a>
+          <a href="../page_summer.html">Summer</a>
+          <a href="../page_fall.html">Fall/Autumn</a>
+          <a href="../page_winter.html">Winter</a>
+          <a href="../Aboutus.html">About us</a>
+        </div>
+    
+        <a href="../index.html"> <!--logo-->
+            <img src="../image/logo.png" alt="logo" style="width: auto; height: 150px; margin: auto;">
+        </a>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span> <!--menu button-->
+    
+        <script> // menu
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+      
+    </table>
+
+    <form class="example" action="action_page.php"> <!--Search bar-->
+        <input type="text" placeholder="&#128270;Search" name="search">
+    </form>
+
+    <div class="pichead">
+        <img src="../Season/Spring/viet nam/te" alt="pic" style="width: 100%; height: 550px;">
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Tet Festival</h2><br>
+                <p>
+                    The Tet Festival was originally celebrated by Vietnamese farmers to thank the gods for the arrival of spring, a practice which dates back thousands of years. Today, it’s a time for paying respects to ancestors and welcoming the New Year with family members (‘Tet’ is an abbreviation of Tết Nguyên Đán, which translates as 
+                    ‘The Feast of the First Morning of the First Day’).<br>
+                </p>
+                
+                <img src="../Season/Spring/Viet Nam/tet2.jpg" alt="pic" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p>
+                    <br>Held between late January and early February, it is officially a three-day celebration but festivities may continue for about a week (sometimes more) 
+                    with every effort made to indulge in eating, drinking, and socialising.
+                    <br>In the weeks leading up to Tet Festival, all homes are thoroughly cleaned (sometimes repainted) to get rid of any bad luck of the old year while ancestral altars are presented with five types of local fruits and votive papers. Locals also decorate their homes with colourful flowers such as chrysanthemums, marigold, Mao Ga flowers, paper white flowers, and lavenders,
+                     together with peach blossom and kumquat trees.
+                </p>
+
+                <br><img src="../Season/Spring/Viet Nam/tet3.jpg" alt="pic" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p>
+                    <br><span>What Happens During Tet Festival in Vietnam?</span>
+                </p>
+
+                <p>
+                    <br>The first day of Tet is a bustling affair with prayers, reunion dinners, and gift exchanges held between family members. Children usually receive money kept in red envelope by their parents and elder relatives. As with most Asian countries, Vietnamese often wear red and yellow during the festivity as 
+                    they believe those colours symbolise prosperity and good fortune.
+                    <br>Throughout the day, the streets are filled with people performing mua lan or lion dance performances with drums, bells, gongs, and firecrackers going off to ward off evil spirits. Buddhist temples all around Vietnam are also packed with locals
+                     giving donations and getting their fortunes told during Tet.
+                </p>
+                <br><img src="../Season/Spring/Viet Nam/tet4.jpg" alt="pic" style="width: 100%; height: 400px; position: relative; left: 165px;">
+                <p>
+                    <br>Tet Festival is also a great time for locals to enjoy an array of traditional Vietnamese dishes such as banh chung (steamed square cake), gio cha (Vietnamese ham/sausage), xoi (sticky rice), and thit ga (steamed chicken). Visiting guests are also served with tea and mut (various dried fruits and seeds), which is 
+                    kept in ornate boxes and placed at the table in the living room.
+                    <br>As the most important festival in Vietnam, most offices, shops, restaurants, and attractions are closed for the first three days of Tet. Flights are also often fully booked about a week before the festival, so it’s highly recommend that you plan in advance
+                     and book your flight to Vietnam as early as possible.
+                </p>
+                
+            </div>
+            <div class="col-sm-3">
+                
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
+  <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+  </script>
+
+<div class="footer">
+  <span class="border"></span><br><br>
+  <div class="inner_footer">
+    <div class="logo_container">
+      <a href="../index.html">
+        <img src="../image/logo.png" alt="" style="position:relative;left: -50px;top: -50px;width: 250px;">
+      </a>
+    </div>
+
+    <div class="footer_third">
+      <h1>Need help:</h1>
+      <a href="">
+        <div>
+          <p>Terms &amp; Conditions</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div>
+          <p>Privacy Policy</p>
+        </div>
+      </a>	
+      
+    </div>
+
+    <div class="footer_third">
+      <h1>Quick links:</h1>
+      <div>
+        <a href="../page_spring.html">
+          <p>Spring</p>
+        </a>
+        <a href="../page_summer.html">
+          <p>Summer</p>
+        </a>
+        <a href="../page_fall.html">
+          <p>Fall/Autumn</p>
+        </a>
+        <a href="../page_winter.html">
+          <p>Winter</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer_third">
+      <div>
+        <h1>Follow us:</h1>
+        <div>
+          <a href=""><i class="fa fa-facebook-square">&nbsp;facebook.com/festivals</i></a>
+          <a href=""><i class="fa fa-instagram">&nbsp;festivals</i></a>
+          <a href=""><i class="fa fa-twitter-square">&nbsp;@festivals</i></a>
+        </div>
+      </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d489.91516524947!2d106.66626537704602!3d10.786683482330675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1svi!2s!4v1604874081227!5m2!1svi!2s" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" style="position: absolute;"></iframe>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
